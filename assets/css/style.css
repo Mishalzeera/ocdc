@@ -1,7 +1,45 @@
+/* Sans styles -------------------------------------*/
+
+/* Raleway */
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+/* Nunito */
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+
+/* IBM Plex Sans KR */
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap");
+
+/* Libre Franklin */
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap");
+
+/* Signika Negative */
+@import url("https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap");
+
+/* Signika */
+@import url("https://fonts.googleapis.com/css2?family=Signika&display=swap");
+
+/* Alegreya Sans */
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap");
+
+/* Serif styles ------------------------------------*/
+
+/* Hina Mincho */
+@import url("https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap");
+
+/* Alegreya */
+@import url("https://fonts.googleapis.com/css2?family=Alegreya&display=swap");
+
+/* Libre Baskerville */
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+
+/* Vollkorn */
+@import url("https://fonts.googleapis.com/css2?family=Vollkorn&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 body {
+  font-family: "Nunito Sans", sans-serif;
 }
