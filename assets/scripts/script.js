@@ -7,14 +7,20 @@ function gsapTest() {
 function headerAnim() {
   gsap.from("#h-white", {
     opacity: 0.3,
-    duration: 2,
+    duration: 10,
+    rotateY: 1000,
   });
-  gsap.from("#h-red", { opacity: 0.3, duration: 2 });
-  gsap.from("#h-green", { opacity: 0.3, duration: 1 });
+  gsap.from("#h-red", {
+    opacity: 0.3,
+    duration: 2,
+    rotateY: 200,
+  });
+  gsap.from("#h-green", { opacity: 0.3, duration: 1, rotation: 360 });
   gsap.from("#h-blue", {
     opacity: 0.3,
     duration: 3,
-    paddingLeft: "300px",
+
+    rotateY: 700,
   });
 
   gsap.to("h1", {

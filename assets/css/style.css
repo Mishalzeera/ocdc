@@ -45,6 +45,13 @@ h1 {
   font-size: 7rem;
 }
 
+#h-white,
+#h-red,
+#h-green,
+#h-blue {
+  display: inline-block;
+}
+
 #h-white {
   color: ivory;
 }
