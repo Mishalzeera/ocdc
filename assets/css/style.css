@@ -1,45 +1,43 @@
-/* Sans styles -------------------------------------*/
-
-/* Raleway */
-@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
-
-/* Nunito */
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
-
-/* IBM Plex Sans KR */
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap");
-
 /* Libre Franklin */
-@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;200;300;400;500;700;900&display=swap");
 
 /* Signika Negative */
-@import url("https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;600;700&display=swap");
 
 /* Signika */
-@import url("https://fonts.googleapis.com/css2?family=Signika&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&display=swap");
 
 /* Alegreya Sans */
-@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
 
-/* Serif styles ------------------------------------*/
+/* acc Libre F main Signika */
 
-/* Hina Mincho */
-@import url("https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap");
-
-/* Alegreya */
-@import url("https://fonts.googleapis.com/css2?family=Alegreya&display=swap");
-
-/* Libre Baskerville */
-@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
-
-/* Vollkorn */
-@import url("https://fonts.googleapis.com/css2?family=Vollkorn&display=swap");
+:root {
+  --accent-font: "Libre Franklin";
+  --main-font: "Signika";
+  --background-color: #221818;
+  --text-color: white;
+}
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
 body {
-  font-family: "Nunito Sans", sans-serif;
+  width: 90vw;
+  margin: 0 auto;
+  text-align: center;
+  font-family: var(--main-font);
+  font-weight: 100;
+  font-size: 1.8rem;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+h1 {
+  text-align: center;
+  font-family: var(--accent-font);
+  font-size: 7rem;
 }
