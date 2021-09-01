@@ -40,9 +40,9 @@ body {
 }
 
 h1 {
-  text-align: center;
+  text-align: left;
   font-family: var(--accent-font);
-  font-size: 7rem;
+  font-size: 3rem;
 }
 
 #h-white,

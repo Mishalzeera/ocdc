@@ -5,26 +5,35 @@ function gsapTest() {
 }
 
 function headerAnim() {
-  gsap.from("#h-white", {
-    opacity: 0.3,
+  gsap.to("#h-white", {
+    rotateY: 360,
     duration: 10,
-    rotateY: 1000,
-  });
-  gsap.from("#h-red", {
-    opacity: 0.3,
-    duration: 2,
-    rotateY: 200,
-  });
-  gsap.from("#h-green", { opacity: 0.3, duration: 1, rotation: 360 });
-  gsap.from("#h-blue", {
-    opacity: 0.3,
-    duration: 3,
-
-    rotateY: 700,
+    repeat: -1,
   });
 
-  gsap.to("h1", {
-    x: "-20vw",
-    duration: 7,
+  gsap.to("#h-red", {
+    rotateY: 360,
+    duration: 11,
+    repeat: -1,
   });
+
+  gsap.to("#h-green", {
+    rotateY: 360,
+    duration: 15,
+    repeat: -1,
+  });
+
+  gsap.to("#h-blue", {
+    rotateY: 360,
+    duration: 20,
+    repeat: -1,
+  });
+
+  gsap.fromTo(
+    "h1",
+    {
+      opacity: 0,
+    },
+    { opacity: 1, duration: 2 }
+  );
 }
