@@ -17,19 +17,42 @@
 
     <script src="assets/scripts/script.js" defer></script>
   </head>
-  <body class="container">
-    <h1>
-      <span id="h-white">O</span><span id="h-red">C</span
-      ><span id="h-green">D</span><span id="h-blue">C</span>
-    </h1>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nobis, dolore
-      libero dolores explicabo omnis nulla rem debitis deserunt. Dolore ipsa
-      maxime odio eius explicabo perspiciatis consequatur, at fuga repellendus
-      quo assumenda earum iste ab magnam officiis quos quas. Sed, cupiditate qui
-      saepe est facilis repellendus quasi ratione placeat id?
-    </p>
-    <img src="assets/img/eclipse.jpeg" alt="" id="test" />
-    <button onclick="gsapTest()">TEST ME</button>
+  <body>
+    <header class="container">
+      <h1>
+        <span id="h-white">O</span><span id="h-red">C</span
+        ><span id="h-green">D</span><span id="h-blue">C</span>
+      </h1>
+
+      <nav>
+        <ul class="nav-flex-parent">
+          <li class="nav-child">
+            <a href="#toscroll1" class="nav-link">Whats this?</a>
+          </li>
+          <li class="nav-child">
+            <a href="#toscroll2" class="nav-link">Why OCDC?</a>
+          </li>
+          <li class="nav-child">
+            <a href="#toscroll3" class="nav-link">Wanna talk?</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="container">
+      <div class="banner">
+        <h2 class="perfect banner-child">It has to be perfect.</h2>
+        <p class="banner-child">
+          The last word of this paragraph is slightly different than the rest of
+          the words. If you are one of us, now you will bounce your left knee
+          and grind your
+          <span id="teeth">teeth</span>.
+        </p>
+      </div>
+      <img src="assets/img/eclipse.jpeg" alt="" id="test" />
+      <button onclick="gsapTest()">TEST ME</button>
+    </section>
+    <div id="toscroll1"></div>
+    <div id="toscroll2"></div>
+    <div id="toscroll3"></div>
   </body>
 </html>

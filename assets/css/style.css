@@ -19,6 +19,10 @@
   --text-color: white;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -31,18 +35,29 @@
 }
 
 body {
-  text-align: center;
   font-family: var(--main-font);
-  font-weight: 200;
-  font-size: 1.8rem;
+  font-weight: 300;
+  font-size: 1.4rem;
   background-color: var(--background-color);
   color: var(--text-color);
 }
 
+header {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+}
+
 h1 {
-  text-align: left;
   font-family: var(--accent-font);
   font-size: 3rem;
+}
+
+.perfect {
+  font-family: "Alegreya Sans";
+  font-weight: 100;
+  font-size: 5rem;
 }
 
 #h-white,
@@ -66,4 +81,60 @@ h1 {
 
 #h-blue {
   color: blue;
+}
+
+.nav-flex-parent {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav-child {
+  list-style-type: none;
+  padding-left: 2rem;
+  font-size: 1.2rem;
+}
+
+.nav-child:first-of-type {
+  padding-left: unset;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.banner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 3rem;
+}
+
+.banner-child {
+  width: 100%;
+}
+
+#teeth {
+  font-size: 1.2rem;
+  letter-spacing: 5px;
+}
+
+section {
+  height: 100vh;
+}
+
+#toscroll1,
+#toscroll2,
+#toscroll3 {
+  height: 100vh;
+}
+
+#toscroll1 {
+  background-color: rgb(34, 182, 108);
+}
+#toscroll2 {
+  background-color: rgb(21, 150, 143);
+}
+#toscroll3 {
+  background-color: rgb(175, 107, 80);
 }
