@@ -11,7 +11,11 @@ function headerAnim() {
   });
   gsap.from("#h-red", { opacity: 0.3, duration: 2 });
   gsap.from("#h-green", { opacity: 0.3, duration: 1 });
-  gsap.from("#h-blue", { opacity: 0.3, duration: 3 });
+  gsap.from("#h-blue", {
+    opacity: 0.3,
+    duration: 3,
+    paddingLeft: "300px",
+  });
 
   gsap.to("h1", {
     x: "-20vw",
