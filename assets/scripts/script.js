@@ -42,29 +42,44 @@ function headerAnim() {
 function scroller() {
   let face = document.querySelector("#face");
   let grid = document.querySelector("#grid");
-  gsap.to("#face", {
-    src: "./assets/img/frown.png",
 
+  let tl1 = gsap.timeline({
     scrollTrigger: {
       trigger: "#face",
-
-      toggleActions: "play none none reset",
-      start: "top",
+      toggleActions: "play none none none",
+      start: "top top",
       end: "1000px",
       scrub: true,
-      markers: true,
+      // markers: true,
     },
   });
 
-  gsap.to("#grid", {
-    src: "./assets/img/grid-dot-out.png",
+  let tl2 = gsap.timeline({
     scrollTrigger: {
-      trigger: "#grid",
-      toggleActions: "play none none reset",
+      trigger: "#face",
+      toggleActions: "play none none none",
       start: "top",
-      end: "1000px",
+      end: "800px",
       scrub: true,
-      markers: true,
+      // markers: true,
     },
+  });
+
+  tl1.to("#face", {
+    src: "assets/img/frown.png",
+    x: "-70vw",
+  });
+
+  tl2.to("#grid", {
+    src: "assets/img/grid-dot-out.png",
+  });
+
+  tl1.to("#face", {
+    src: "assets/img/smile.png",
+    x: "0",
+  });
+
+  tl2.to("#grid", {
+    src: "assets/img/grid-dot-in.png",
   });
 }

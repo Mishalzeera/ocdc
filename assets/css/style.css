@@ -35,10 +35,13 @@ html {
 }
 
 body {
+  background-image: url("../img/sand.jpg");
+  background-color: var(--background-color);
+  background-position: center;
+  background-blend-mode: color-dodge;
   font-family: var(--main-font);
   font-weight: 300;
   font-size: 1.4rem;
-  background-color: var(--background-color);
   color: var(--text-color);
 }
 
