@@ -5,10 +5,10 @@ function gsapTest() {
 }
 
 function headerAnim() {
-  gsap.to("#h-white", {
+  gsap.from("#h-white", {
     rotateY: 360,
     duration: 10,
-    repeat: -1,
+    yoyo: true,
   });
 
   gsap.to("#h-red", {
@@ -17,10 +17,10 @@ function headerAnim() {
     repeat: -1,
   });
 
-  gsap.to("#h-green", {
+  gsap.from("#h-green", {
     rotateY: 360,
-    duration: 15,
-    repeat: -1,
+    duration: 14,
+    yoyo: true,
   });
 
   gsap.to("#h-blue", {
@@ -36,4 +36,35 @@ function headerAnim() {
     },
     { opacity: 1, duration: 2 }
   );
+  scroller();
+}
+
+function scroller() {
+  let face = document.querySelector("#face");
+  let grid = document.querySelector("#grid");
+  gsap.to("#face", {
+    src: "./assets/img/frown.png",
+
+    scrollTrigger: {
+      trigger: "#face",
+
+      toggleActions: "play none none reset",
+      start: "top",
+      end: "1000px",
+      scrub: true,
+      markers: true,
+    },
+  });
+
+  gsap.to("#grid", {
+    src: "./assets/img/grid-dot-out.png",
+    scrollTrigger: {
+      trigger: "#grid",
+      toggleActions: "play none none reset",
+      start: "top",
+      end: "1000px",
+      scrub: true,
+      markers: true,
+    },
+  });
 }

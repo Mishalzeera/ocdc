@@ -76,7 +76,7 @@ h1 {
 }
 
 #h-green {
-  color: green;
+  color: seagreen;
 }
 
 #h-blue {
@@ -120,7 +120,18 @@ h1 {
 }
 
 section {
-  height: 100vh;
+  /* height: 100vh; */
+}
+.smile-frown-smile {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#face,
+#grid {
+  width: 20%;
 }
 
 #toscroll1,
@@ -130,11 +141,11 @@ section {
 }
 
 #toscroll1 {
-  background-color: rgb(34, 182, 108);
+  /* background-color: rgb(34, 182, 108); */
 }
 #toscroll2 {
-  background-color: rgb(21, 150, 143);
+  /* background-color: rgb(21, 150, 143); */
 }
 #toscroll3 {
-  background-color: rgb(175, 107, 80);
+  /* background-color: rgb(175, 107, 80); */
 }
