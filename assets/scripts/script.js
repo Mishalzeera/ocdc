@@ -47,7 +47,7 @@ function scroller() {
     scrollTrigger: {
       trigger: "#face",
       toggleActions: "play none none none",
-      start: "top top",
+      start: "bottom center",
       end: "1000px",
       scrub: true,
       // markers: true,
@@ -58,7 +58,7 @@ function scroller() {
     scrollTrigger: {
       trigger: "#face",
       toggleActions: "play none none none",
-      start: "top",
+      start: "bottom center",
       end: "800px",
       scrub: true,
       // markers: true,
@@ -74,12 +74,20 @@ function scroller() {
     src: "assets/img/grid-dot-out.png",
   });
 
+  tl2.to("#grid", {
+    src: "assets/img/grid-dot-in.png",
+  });
+
   tl1.to("#face", {
     src: "assets/img/smile.png",
     x: "0",
   });
 
+  tl1.to("#face", {
+    opacity: 0,
+  });
+
   tl2.to("#grid", {
-    src: "assets/img/grid-dot-in.png",
+    opacity: 0,
   });
 }
