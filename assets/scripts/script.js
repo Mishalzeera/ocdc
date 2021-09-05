@@ -65,6 +65,17 @@ function scroller() {
     },
   });
 
+  let tl3 = gsap.timeline({
+    scrollTrigger: {
+      trigger: "#how-it-is",
+      toggleActions: "play none none none",
+      start: "bottom bottom",
+      end: "800px",
+      scrub: true,
+      // markers: true,
+    },
+  });
+
   tl1.to("#face", {
     src: "assets/img/frown.png",
     x: "-70vw",
@@ -90,4 +101,17 @@ function scroller() {
   tl2.to("#grid", {
     opacity: 0,
   });
+
+  tl3.fromTo(
+    "#how-it-is",
+    {
+      opacity: 0,
+      x: "-10vw",
+    },
+    {
+      opacity: 1,
+      x: "90vw",
+      fontSize: "5rem",
+    }
+  );
 }
