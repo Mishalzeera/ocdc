@@ -91,6 +91,7 @@ function scroller() {
 
   tl1.to("#face", {
     src: "./assets/img/smile.png",
+    width: "50%",
     x: "0",
   });
 
