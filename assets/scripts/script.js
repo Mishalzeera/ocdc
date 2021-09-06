@@ -47,7 +47,7 @@ function scroller() {
     scrollTrigger: {
       trigger: "#face",
       toggleActions: "play none none none",
-      start: "bottom center",
+      start: "center center",
       end: "1000px",
       scrub: true,
       // markers: true,
@@ -58,7 +58,7 @@ function scroller() {
     scrollTrigger: {
       trigger: "#face",
       toggleActions: "play none none none",
-      start: "bottom center",
+      start: "center center",
       end: "800px",
       scrub: true,
       // markers: true,
@@ -111,7 +111,7 @@ function scroller() {
     {
       opacity: 1,
       x: "90vw",
-      fontSize: "5rem",
+      fontSize: "10rem",
     }
   );
 }
