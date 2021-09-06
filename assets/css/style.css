@@ -30,7 +30,7 @@ html {
 }
 
 img {
-  display: block;
+  display: block !important;
 }
 
 .container {
