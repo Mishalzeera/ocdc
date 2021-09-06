@@ -77,20 +77,20 @@ function scroller() {
   });
 
   tl1.to("#face", {
-    src: "assets/img/frown.png",
+    src: "./assets/img/frown.png",
     x: "-70vw",
   });
 
   tl2.to("#grid", {
-    src: "assets/img/grid-dot-out.png",
+    src: "./assets/img/grid-dot-out.png",
   });
 
   tl2.to("#grid", {
-    src: "assets/img/grid-dot-in.png",
+    src: "./assets/img/grid-dot-in.png",
   });
 
   tl1.to("#face", {
-    src: "assets/img/smile.png",
+    src: "./assets/img/smile.png",
     x: "0",
   });
 
